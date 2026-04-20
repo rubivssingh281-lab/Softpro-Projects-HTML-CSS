@@ -1,0 +1,290 @@
+/* style.css – Main stylesheet for Sarkari Result website */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://plus.unsplash.com/premium_photo-1725404428224-664f5f0217b3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* Header */
+#header {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: linear-gradient(90deg, #09008d, #32a6f3);
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  padding: 15px 0 10px;
+  position: relative;
+}
+
+.logo img {
+  border-radius: 30%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#head-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#head-title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#wrap {
+  margin: 0 auto;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  max-width: 998px;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #000;
+  padding: 0;
+  margin: 0;
+  max-width: 1002px;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  border-radius: 8px 8px 0px 0px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  background: #ab183d;
+}
+/* Main content boxes */
+.box-data {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-collapse: collapse;
+}
+
+.box-data td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7,
+#image8 {
+  background: #ab183d;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#image1 a,
+#image2 a,
+#image3 a,
+#image4 a,
+#image5 a,
+#image6 a,
+#image7 a,
+#image8 a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.center-tables {
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  padding: 15px 0;
+  border-radius: 0px 0px 8px 8px;
+}
+
+#heading {
+  background: #ab183d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#heading a {
+  color: white;
+  text-decoration: none;
+}
+
+#post {
+  background: #f9f9f9;
+  padding: 10px;
+  height: auto;
+  min-height: 300px;
+}
+
+#post ul {
+  margin: 0 0 0 20px;
+}
+
+#post li {
+  margin: 8px 0;
+  list-style-type: square;
+}
+
+#post a {
+  text-decoration: none;
+  color: #0044cc;
+}
+
+#post a:hover {
+  text-decoration: underline;
+}
+
+#view {
+  margin-top: 20px;
+  text-align: center;
+  background: #ab183d;
+  padding: 8px;
+  border-radius: 20px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#view a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  width: 74%;
+  margin: 20px auto;
+  text-align: center;
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.footer-content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  padding: 10px;
+  text-align: left;
+  width: 23%;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  color: #ab183d;
+}
+
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #ab183d;
+}
+
+/* Content area (for inner pages) */
+.content_area {
+  max-width: 1010px;
+  margin: 20px auto;
+  background: white;
+  border: 2px solid #d2691e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.content_area h2 {
+  background: #ab183d;
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.content_area p,
+.content_area ul {
+  margin: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .navbar li a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .footer-col {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+
+  .box-data td {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-col {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+}

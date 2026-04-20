@@ -1,0 +1,1115 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REC Gonda || Home</title>
+    <link href="https://recgonda.ac.in/Content/img/Recgonda11.jpg" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:white !important;">
+    <!--This is main-->
+    <div class="container-fluid">
+        <!-- Header Bar Section -->
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="py-2" style="background-color:darkred">
+                    <div class="container-fluid px-3 px-md-5">
+                        <div class="row align-items-center gx-3">
+                            <!-- Time Section -->
+                            <div
+                                class="col-12 col-md-4 text-white d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-md-0">
+                                <i class="fa-regular fa-clock me-2"></i>
+                                <span id="time" style="font-weight: 500;">Friday, April 17, 2026 at 6:54:13 PM</span>
+                            </div>
+                            <!-- Buttons & Social Icons -->
+                            <div class="col-12 col-md-8 text-center text-md-end">
+                                <div
+                                    class="d-flex flex-wrap gap-2 align-items-center justify-content-center justify-content-md-end">
+                                    <a href="https://email.recgonda.ac.in/" target="_blank">
+                                        <button class="btn btn-outline-warning btn-sm px-3">
+                                            <i class="fa-solid fa-envelope me-1"></i> Email
+                                        </button>
+                                    </a>
+                                    <button class="btn btn-outline-warning btn-sm px-3" type="button"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-building-columns"></i>&nbsp;&nbsp;Virtual Tour
+                                    </button>
+                                    <!-- Virtual Tour Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title fw-bold" id="exampleModalLabel">
+                                                        🎥 Virtual Campus Tour
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body p-0">
+                                                    <video id="collegeVideo" class="w-100" controls=""
+                                                        preload="metadata" playsinline=""
+                                                        style="border-radius:0 0 6px 6px; background:#000;">
+                                                        <source src="/Content/video/video.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm px-4"
+                                                        style="background:#ff6600; color:#000;" data-bs-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        const videoModal = document.getElementById('exampleModal');
+                                        const video = document.getElementById('collegeVideo');
+                                        videoModal.addEventListener('hidden.bs.modal', function () {
+                                            video.pause();
+                                            video.currentTime = 0;
+                                        });
+                                    </script>
+                                    <a href="/home/GrievancePortal">
+                                        <button class="btn btn-outline-warning btn-sm px-3">
+                                            <i class="fa-solid fa-graduation-cap me-1"></i> Grievance
+                                        </button>
+                                    </a>
+                                    <a href="/admin/AdminLogin">
+                                        <button class="btn btn-outline-warning btn-sm px-3">
+                                            <i class="fa-solid fa-user-shield me-1"></i> Admin Login
+                                        </button>
+                                    </a>
+                                    <!-- Social Icons -->
+                                    <a href="https://www.instagram.com/rec.gonda?igsh=NG05cmRxZGlvNXky" target="_blank"
+                                        class="text-white border rounded-circle d-inline-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; text-decoration: none;">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/share/1696hrqg4H/" target="_blank"
+                                        class="text-white border rounded-circle d-inline-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; text-decoration: none;">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://youtube.com/recgondaofficial?si=qnzJZNcu98y4fOKj" target="_blank"
+                                        class="text-white border rounded-circle d-inline-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; text-decoration: none;">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/rec-gonda-971257361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        class="text-white border rounded-circle d-inline-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; text-decoration: none;">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="https://x.com/RecGonda?t=-wkd-cxfQHHu9HmZR0OuSg&s=09" target="_blank"
+                                        class="text-white border rounded-circle d-inline-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px; text-decoration: none;">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <span class="text-light fw-semibold">
+                                        <i class="fa-solid fa-tag"></i> &nbsp;Tenders
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function formatDateTime() {
+                const now = new Date();
+                const options = {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true
+                };
+                return now.toLocaleString('en-US', options);
+            }
+            function updateTime() {
+                document.getElementById('time').innerText = formatDateTime();
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+        <div class="row border " style="background-color:white;">
+            <div>
+                <div class="container">
+                    <div>
+                        <div class="container py-3" style="">
+                            <div class="row align-items-center g-3">
+                                <div class="col-md-2 text-center text-md-end">
+                                    <img src="https://recgonda.ac.in/Content/img/Recgonda11.jpg" alt="AKTU Logo"
+                                        style="height: 120px; object-fit: contain;">
+                                </div>
+                                <div class="col-md-6 text-center text-md-start">
+                                    <h2 class="fw-bold mb-1"
+                                        style="font-size: 23px;font-family:Outfit, sans-serif; color:darkred; margin-bottom:-10px !important;">
+                                        Maa Pateshwari Devi, Rajkiya Engineering College, Gonda </h2>
+                                    <hr>
+                                    <h5 class="fw-bold mb-1" style="font-family:Kalam, cursive; margin-top:-6px;">
+                                        माँ पाटेश्वरी देवी, राजकीय इंजीनियरिंग कॉलेज, गोंडा
+                                    </h5>
+                                    <p class="mb-0 mt-2"
+                                        style=" font-size: 15px;font-family:Poppins,sans-serif; font-weight:500;">
+                                        AICTE Approved &amp; Affiliated to Dr. A.P.J. Abdul Kalam Technical University,
+                                        Lucknow
+                                    </p>
+                                </div>
+                                <div
+                                    class="col-md-4 d-flex d-none d-md-flex justify-content-center justify-content-md-start align-items-center gap-3">
+                                    <img src="https://recgonda.ac.in/Content/img/aktu.png" alt="AKTU Logo"
+                                        style="height: 100px; object-fit: contain;">
+                                    <img src="https://recgonda.ac.in/Content/img/scape/MDI.png" alt="Make in India"
+                                        style="height: 80px; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <!-- Navbar -->
+        <div class="row">
+            <div class="col-md-12 p-0 sticky-top">
+                <nav class="navbar navbar-expand-md navbar-dark ms-0 p-3" style="background-color:darkred;">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto ms-auto  mb-lg-0" style="margin-left:-20px; border:0px;">
+                                <li class="nav-item border-0" style="border-left:0px;">
+                                    <a class="nav-link active text-uppercase border-0 axpx"
+                                        style="border-left:0px !important;" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active border-0" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ABOUT REC
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item " href="/home/About">About Us</a>
+                                            <a class="dropdown-item" href="/home/Vision">Vision &amp; Mission</a>
+                                            <a class="dropdown-item" href="/home/DirectorMessage">Director's Message</a>
+                                            <a class="dropdown-item" href="/home/Accreditations">Accreditations</a>
+                                            <a class="dropdown-item" href="/home/MinutesMeeting">Minutes of BOG
+                                                Meeting</a>
+                                            <a class="dropdown-item" href="/home/MemorandumAssociation">Memorandum Of
+                                                Association</a>
+                                            <a class="dropdown-item" href="/home/G_OChange">G.O For Change Of College
+                                                Name</a>
+                                            <a class="dropdown-item" href="/home/AICTEAffiliation">AICTE EoA &amp;
+                                                Affiliation</a>
+                                            <a class="dropdown-item" href="/home/MinutesMeetingBWCCPCFC">Minutes Of
+                                                Meeting of BWC CPC And FC</a>
+                                            <a class="dropdown-item" href="#">Service Rule</a>
+                                            <a class="dropdown-item"
+                                                href="/Content/RecgondaFile/NewsLetter RecGonda Vol.12024-25.pdf"
+                                                target="_blank">News Letter</a>
+                                            <a class="dropdown-item" href="/home/AffiliationLetter">Affiliation
+                                                Letter</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active text-uppercase" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Governance
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="/home/Director">Director's Profile</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/home/Board_Governors">Board Of Governors</a>
+                                            <a class="dropdown-item" href="/home/Administration">Adminstration</a>
+                                            <a class="dropdown-item" href="/home/Council_Affairs">Council &amp;
+                                                Committee</a>
+                                            <a class="dropdown-item" href="/home/committee_file">Committee Files</a>
+                                            <a class="dropdown-item" href="/home/Budget">Budget</a>
+                                            <a class="dropdown-item" href="/home/Society_Bylaws">Society Bylaws</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown text-uppercase">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Academics
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item ac" href="/home/ACADEMICS_Officials">Academics
+                                                Officials</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="/home/Course_Of_study">Course Of Study</a>
+                                            <a class="dropdown-item" href="/home/Syllabus">Syllabus</a>
+                                            <a class="dropdown-item" href="/home/Academic_Calendar">Academic
+                                                Calender</a>
+                                            <a class="dropdown-item" href="/home/Fee_Structure">Fee Structure</a>
+                                            <a class="dropdown-item" href="/home/Eligibility_Criteria">Admission</a>
+                                            <a class="dropdown-item" href="/Content/RecgondaFile/Rules.pdf"
+                                                target="_blank">Rules</a>
+                                            <a class="dropdown-item" href="/home/List_of_Holidays">List Of Holidays</a>
+                                            <a class="dropdown-item" href="/home/TimeTable">Time Table</a>
+                                            <a class="dropdown-item" href="#">Industrial And Academic Association
+                                                Mentor</a>
+                                            <a class="dropdown-item" href="#">Acdemic Committe - Minutes Of Meetings</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                                        data-bs-toggle="dropdown">
+                                        Departments
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="/Home/CSE">Department of
+                                                Computer Science Enginnering</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/home/Cslabs">CSE labs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="/Home/CE">Department of Civil
+                                                Engineering</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/home/Celabs">CE labs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="/Home/ME">Department of
+                                                Mechanical Engineering</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/home/melabs">ME labs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="/Home/EE">Department of
+                                                Electrical Engineering</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/home/eelabs">EE labs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="/Home/APSH">Department of
+                                                Applied Sciences &amp; Humanities</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">ASHP labs</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        PLACEMENT CELL
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item ac" href="/home/Overview">OverView </a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="/home/Placement_Brochure">Placement
+                                                Brochure</a>
+                                            <a class="dropdown-item" href="/home/Notification">Notification</a>
+                                            <a class="dropdown-item" href="/home/PastRecruiters">Past-Recruiters</a>
+                                            <a class="dropdown-item" href="/home/TrainingPlacementOfficer">Training And
+                                                Placement Officer</a>
+                                            <a class="dropdown-item" href="/home/Placement_Record">Placement Record</a>
+                                            <a class="dropdown-item" href="/home/MoU">MoU</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        STUDENTS
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item " href="/home/Centralfacility">Central Facility</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/home/Scholarship">Scholarship</a>
+                                            <a class="dropdown-item" href="/home/AntiRaggingEnabled">Anti-Ragging
+                                                Enabled Campus</a>
+                                            <a class="dropdown-item" href="/home/AntiRaggingComplaint">Anti Ragging
+                                                Complaint</a>
+                                            <a class="dropdown-item" href="/home/GrievancePortal">Student Grievance
+                                                Portal</a>
+                                            <a class="dropdown-item" href="/home/CoCurricular">Co-Curricular</a>
+                                            <a class="dropdown-item" href="/home/Hostels">Hostels</a>
+                                            <a class="dropdown-item" href="#">Reduressal of Grievance Of Student
+                                                Regulations_2019_AICTE</a>
+                                            <a class="dropdown-item" href="/home/BIC_Club">BIC Club</a>
+                                            <a class="dropdown-item" href="/home/gallery">Gallery</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        FACULTY &amp; RESEARCH
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item ac" href="/home/Faculty_Directory">Faculty
+                                                Directory</a></li>
+                                        <li><a class="dropdown-item" href="/home/Research_Publications">Research
+                                                Publications</a></li>
+                                        <li><a class="dropdown-item" href="/home/Research_Activities">Research
+                                                Activities</a></li>
+                                        <li><a class="dropdown-item" href="#">Research Cosultancy And Testing Services
+                                                Guidlines</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/home/IQAC">IQAC</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        EXAMINATION &amp; RESULTS
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item ac text-capitalize" target="_blank"
+                                                href="/home/Examination">Examination</a></li>
+                                        <li><a class="dropdown-item ac" target="_blank"
+                                                href="/Content/RecgondaFile/06_REC GONDA_DAA_ RULE REGULATION.pdf">Rules</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/home/Results">Results</a></li>
+                                        <li><a class="dropdown-item" href="/home/ExaminationScheme">Examination scheme
+                                            </a></li>
+                                        <li><a class="dropdown-item" href="/home/ExaminationCell">Examination Cell </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link active text-uppercase" aria-current="page"
+                                        href="/home/ContactDetails">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Slider -->
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item"
+                            style="min-height: 500px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://recgonda.ac.in/Content/Republic%20Day/3.jpeg'); background-size: cover; background-position: center;">
+                            <div class="d-flex align-items-end justify-content-center h-100">
+                                <div class="text-center text-light p-3 p-md-4"
+                                    style="background-color: rgba(0,0,0,0.5); max-width: 700px; width: 90%; margin-bottom: -400px !important;">
+                                    <h4 class="fw-bold fs-5 fs-md-4">Maa Pateshwari Devi, Rajkiya Engineering College,
+                                        Gonda</h4>
+                                    <p class="mb-0">AICTE Approved &amp; Affiliated to Dr. A.P.J. Abdul Kalam Technical
+                                        University, Lucknow</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item"
+                            style="min-height: 500px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://imgs.search.brave.com/DwM27VGimYbo9JguONLhXMHzM2yVDza7eeOtvYlKGWg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZWNn/b25kYS5hYy5pbi9D/b250ZW50L2ltZy9p/bWFnZS9nbDMuanBn'); background-size: cover; background-position: center;">
+                            <div class="d-flex align-items-end justify-content-center h-100">
+                                <div class="text-center text-light p-3 p-md-4"
+                                    style="background-color: rgba(0,0,0,0.5); max-width: 700px; width: 90%; margin-bottom: -400px !important;">
+                                    <h4 class="fw-bold fs-5 fs-md-4">Maa Pateshwari Devi, Rajkiya Engineering College,
+                                        Gonda</h4>
+                                    <p class="mb-0">AICTE Approved &amp; Affiliated to Dr. A.P.J. Abdul Kalam Technical
+                                        University, Lucknow</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item"
+                            style="min-height: 500px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://imgs.search.brave.com/xbhrhGT8ec0yoHhjwPOLPuhoAcr-bO7QPT2oU-pKSI8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWNpbWcuYW1hcnVq/YWxhLmNvbS9hc3Nl/dHMvaW1hZ2VzLzRj/cGx1cy8yMDIzLzA4/LzAzL2dhZGEta2Et/dXRhcmFsLXJhZGEt/c2F0aGF0YS1yYWph/a2F5YS1pamFuYXlh/cmFnYS1rYWxqYV8x/NjkxMDg1NzY2Lmpw/ZWc_dz00MTQmZHBy/PTEuMCZxPTgw'); background-size: cover; background-position: bottom;">
+                            <div class="d-flex align-items-end justify-content-center h-100">
+                                <div class="text-center text-light p-3 p-md-4"
+                                    style="background-color: rgba(0,0,0,0.5); max-width: 700px; width: 90%; margin-bottom: -400px !important;">
+                                    <h4 class="fw-bold fs-5 fs-md-4">Shaping Engineers of Tomorrow</h4>
+                                    <p class="mb-0">Committed to excellence in technical education and innovation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active"
+                            style="min-height: 500px; background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://imgs.search.brave.com/2lh1315g33M5xRMZLIePEH2bvwFLz9Lae5EETM2YA3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZWNn/b25kYS5hYy5pbi9D/b250ZW50L2ltZy9p/bWFnZS9jb2wzLmpw/Zw'); background-size: cover; background-position: center;">
+                            <div class="d-flex align-items-end justify-content-center h-100">
+                                <div class="text-center text-light p-3 p-md-4"
+                                    style="background-color: rgba(0,0,0,0.5); max-width: 700px; width: 90%; margin-bottom: -400px !important;">
+                                    <h4 class="fw-bold fs-5 fs-md-4">Education Par Excellence</h4>
+                                    <p class="mb-0">REC — A global leader in education and knowledge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <img src="https://recgonda.ac.in/Content/img/scape/sapce.png" class="w-100"
+                    style="position:absolute; z-index:999; margin-top:-180px;height:180px;">
+            </div>
+        </div>
+        <!-- Announcement -->
+        <div class="row align-items-center">
+            <div class="col-12 col-md-2 text-white py-3 text-center text-md-start" style="background-color:darkred;">
+                <h6 class="mb-0 fw-semibold">Announcements</h6>
+            </div>
+            <div class="col-12 col-md-10 border" style="color: black;">
+                <marquee behavior="scroll" direction="left" scrollamount="4" onmouseover="stop()" onmouseout="start()">
+                    <div class="notification-container"
+                        style="display: inline-flex; gap: 15px; white-space: nowrap; align-items: center;">
+                        <div style="white-space: nowrap;">
+                            <a href="/Content/upload/Notification/noti2025-08-01_22-29-27.pdf" target="_blank"
+                                style="text-decoration:none; color:black;">
+                                <i class="fas fa-download me-1"></i> Rajkiya Engineering Gonda Guest Faculty Recruitment
+                                for Academic Session 2025-26
+                            </a>
+                            <span>||</span>
+                        </div>
+                        <div style="white-space: nowrap;">
+                            <a href="/Content/upload/Notification/noti2025-08-01_22-33-30.pdf" target="_blank"
+                                style="text-decoration:none; color:black;">
+                                <i class="fas fa-download me-1"></i> Quotation Notice- Date: 26/05/2025
+                            </a>
+                            <span>||</span>
+                        </div>
+                    </div>
+                </marquee>
+            </div>
+        </div>
+        <!-- About College -->
+        <div class="row"
+            style="background-image:url('/Content/img/bgimg/bg1.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <div>
+                <div class="container mt-4 mb-5">
+                    <div class="row align-items-center mt-3">
+                        <div class="col-12 col-md-8 mb-4">
+                            <h4 class="fw-bold"
+                                style="font-family: 'Josefin Sans', sans-serif; color: darkred; border-left: 5px solid darkred; padding-left: 10px; margin-top:50px;">
+                                Maa Pateshwari Devi, Rajkiya Engineering College, Gonda
+                            </h4>
+                            <hr>
+                            <p class="text-justify"
+                                style="line-height: 34px; font-size: 16px; text-align:justify; font-family: 'Poppins', sans-serif;">
+                                Maa Pateshwari Devi Rajkiya Engineering College, Gonda, established by the Government of
+                                Uttar Pradesh in 2023, as an associated Institute of Dr. A.P.J. Abdul Kalam Technical
+                                University (AKTU), Lucknow. The Institute offers four year full time B.Tech programmes
+                                in Computer Science and Engineering, Electrical Engineering, Civil Engineering, and
+                                Mechanical Engineering, each with an annual intake of 60 students. Further, Institute
+                                has an ecosystem of innovation and startup, where students work on local problems and
+                                provide such solutions that are globally accepted. The Institute provides quality
+                                education and skills to prepare human resources that are problem solver and
+                                globally&nbsp;competitive.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="video-box shadow-lg rounded position-relative">
+                                <video id="collegeVideo2" class="video-fluid rounded" preload="metadata" playsinline="">
+                                    <source src="https://recgonda.ac.in/Content/video/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-btn" id="playBtn2" onclick="playVideo2()">
+                                    ▶
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            function playVideo2() {
+                                const video = document.getElementById("collegeVideo2");
+                                const playBtn = document.getElementById("playBtn2");
+                                video.setAttribute("controls", "controls");
+                                video.play();
+                                playBtn.style.display = "none";
+                                video.onpause = () => playBtn.style.display = "flex";
+                                video.onended = () => playBtn.style.display = "flex";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Mentors -->
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="py-5" style="background: linear-gradient(to right, #8B0000, #B22222);">
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col text-center">
+                                <h2 class="fw-bold text-white position-relative d-inline-block"
+                                    style="font-family: 'Josefin Sans', sans-serif;">
+                                    Our Mentors
+                                </h2>
+                                <div style="height: 3px; width: 60px; background-color: #fff; margin: 10px auto 0;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="mentor-card p-4 text-center h-100 rounded-4 shadow bg-white">
+                                    <div class="mentor-img-wrap mb-3">
+                                        <img src="https://recgonda.ac.in/Content/img/Govermer.jpg"
+                                            alt="Smt. Anandiben Patel" class="img-fluid rounded-circle"
+                                            style="height: 150px; width: 150px; object-fit: cover; border:4px solid darkred;">
+                                    </div>
+                                    <h5 class="fw-semibold  mb-1 fw-bold"
+                                        style="color:darkred;font-family: 'Josefin Sans', sans-serif;">Smt. Anandiben
+                                        Patel</h5>
+                                    <hr class="w-25 mx-auto my-2">
+                                    <p class="text-muted fw-bold"
+                                        style="font-family: 'Poppins', sans-serif; font-size: 15px;">
+                                        Hon’ble Governor<br>Uttar Pradesh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="mentor-card p-4 text-center h-100 rounded-4 shadow bg-white">
+                                    <div class="mentor-img-wrap mb-3">
+                                        <img src="https://recgonda.ac.in/Content/img/yogiji.jpg"
+                                            alt="Shri Yogi Adityanath" class="img-fluid rounded-circle"
+                                            style="height: 150px; width: 150px; object-fit: cover; border: 4px solid darkred;">
+                                    </div>
+                                    <h5 class="fw-semibold fw-bold mb-1"
+                                        style="color:darkred;font-family: 'Josefin Sans', sans-serif;">Shri Yogi
+                                        Adityanath</h5>
+                                    <hr class="w-25 mx-auto my-2">
+                                    <p class="text-muted fw-bold"
+                                        style="font-family: 'Poppins', sans-serif; font-size: 15px;">
+                                        Hon’ble Chief Minister<br>Uttar Pradesh
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="mentor-card p-4 text-center h-100 rounded-4 shadow bg-white">
+                                    <div class="mentor-img-wrap mb-3">
+                                        <img src="https://recgonda.ac.in/Content/img/minister.jpg"
+                                            alt="Shri Ashish Patel" class="img-fluid rounded-circle"
+                                            style="height: 150px; border: 4px solid darkred; width: 150px; object-fit: cover;">
+                                    </div>
+                                    <h5 class="fw-semibold  mb-1 fw-bold"
+                                        style="color:darkred;font-family: 'Josefin Sans', sans-serif;">Shri Ashish Patel
+                                    </h5>
+                                    <hr class="w-25 mx-auto my-2">
+                                    <p class="text-muted fw-bold"
+                                        style="font-family: 'Poppins', sans-serif; font-size: 15px;">
+                                        Hon'ble Minister of Technical Education
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <div class="mentor-card p-4 text-center h-100 rounded-4 shadow bg-white">
+                                    <div class="mentor-img-wrap mb-3">
+                                        <img src="https://recgonda.ac.in/Content/img/Prof%20JP%20Pandey.jpg"
+                                            alt="Prof. J. P. Pandey" class="img-fluid rounded-circle"
+                                            style="height: 150px; width: 150px; border: 4px solid darkred; object-fit: cover;">
+                                    </div>
+                                    <h5 class="fw-semibold fw-bold mb-1"
+                                        style="color:darkred;font-family: 'Josefin Sans', sans-serif;">Prof. J. P.
+                                        Pandey</h5>
+                                    <hr class="w-25 mx-auto my-2">
+                                    <p class="text-muted fw-bold"
+                                        style="font-family: 'Poppins', sans-serif; font-size: 15px;">
+                                        Vice Chancellor, AKTU<br>Uttar Pradesh
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Director Message -->
+        <div class="row"
+            style="background-image:url('/Content/img/bgimg/bg1.jpg'); height:auto; background-size: cover; background-position: center; background-attachment: fixed;">
+            <div>
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 style="font-family: Josefin Sans,sans-serif; color:darkred; border-left:5px solid darkred; padding-left:5px;"
+                                class="fw-bold">Director Message</h3>
+                            <div class="row mt-4">
+                                <div class="col-sm-4 border pt-3 text-center">
+                                    <img src="https://recgonda.ac.in/Content/img/dir.jpg" class="" height="400px"
+                                        style="width:95%; border-radius:5px;">
+                                    <h6 class="text-center mt-2 fw-bold mt-3"
+                                        style="margin-bottom:-9px; font-size:18px; color:darkred">
+                                        Prof Bhartendu Nath Mishra
+                                    </h6>
+                                    <hr>
+                                    <h6 class="text-center mt-2 "
+                                        style="margin-top:-9px !important; font-family:Josefin Sans,sans-serif; font-size:15px;">
+                                        Director of MPDREC, Gonda</h6>
+                                </div>
+                                <div class="col-sm-8 pt-4 border p-3" style="font-family: Poppins, sans-serif;">
+                                    <h6 style="font-size:18px;color:darkred;" class="fw-bold">Dear Students,</h6>
+                                    <hr>
+                                    <p style="text-align:justify; font-size:16px;line-height:36px;" class="mb-1">
+                                        Welcome to Rajkiya Engineering College, Gonda! As the Director, I’m honored to
+                                        lead an institution focused on academic excellence, innovation, and holistic
+                                        development. Education is the key to a meaningful life, and at REC Gonda, we
+                                        equip students with the knowledge, skills, and values to succeed in a rapidly
+                                        evolving world.
+                                        We strive to shape not only skilled engineers but responsible citizens and
+                                        visionary leaders who contribute to society. Our dedicated faculty foster a
+                                        learning environment that promotes creativity, curiosity, and critical thinking.
+                                        With modern infrastructure and advanced labs, REC Gonda provides the perfect
+                                        platform for you to realize your dreams.
+                                        Dear students, success comes to those who dream big and work hard. Embrace
+                                        challenges, stay disciplined, and never stop learning. Your attitude and efforts
+                                        will determine your success.
+                                        To the parents, thank you for trusting us with your child’s future. Together,
+                                        we’ll help them excel.
+                                        <br>
+                                        <b>Wishing you all a successful journey ahead!</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features & Facilities -->
+        <div class="row" style="background-color:darkred">
+            <div>
+                <div class="container mt-4 mb-5">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row mt-3">
+                                <div class="col text-center">
+                                    <h2 class="fw-bold text-white position-relative d-inline-block"
+                                        style="font-family: 'Josefin Sans', sans-serif;">
+                                        <span>Features &amp; Facilities</span>
+                                        <div
+                                            style="height: 3px; width: 60%; background-color: #fff; margin: 10px auto 0;">
+                                        </div>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row row-cols-1 row-cols-md-4 g-3">
+                                    <div class="col">
+                                        <div class="card rounded-0">
+                                            <img src="https://thumbs.dreamstime.com/b/computer-lab-neatly-placed-rows-42239974.jpg"
+                                                class="card-img-top p-2" style="height:200px;" alt="...">
+                                            <div class="card-body text-center"
+                                                style="font-family: 'Josefin Sans', sans-serif;">
+                                                <h5 class="card-title fw-bold mb-0" style="color:darkred"><i
+                                                        class="fa-solid fa-computer"></i>&nbsp; Computer Center</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card rounded-0">
+                                            <img src="https://cdn.wallpapersafari.com/76/44/9splMe.jpg"
+                                                class="card-img-top p-2" style="height:200px;" alt="...">
+                                            <div class="card-body text-center"
+                                                style="font-family: 'Josefin Sans',sans-serif;">
+                                                <h5 class="card-title fw-bold mb-0" style="color:darkred"><i
+                                                        class="fa-solid fa-book"></i> Library</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card rounded-0">
+                                            <img src="https://recgonda.ac.in/Content/img/image/col1.jpg"
+                                                class="card-img-top p-2" style="height:200px;" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title mb-0 fw-bold"
+                                                    style="color: darkred; font-family: 'Josefin Sans',sans-serif;">
+                                                    <i class="fa-solid fa-medal"></i> Curricular Activities
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="https://wallpaperaccess.com/full/1445474.jpg"
+                                                class="card-img-top p-2" style="height:200px; border-radius:5px;"
+                                                alt="...">
+                                            <div class="card-body text-center"
+                                                style="color: darkred; font-family: 'Josefin Sans',sans-serif;">
+                                                <h5 class="card-title fw-bold mb-0"><i class="fa-solid fa-wifi"></i>
+                                                    24x7 Internet</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Courses Section -->
+        <div class="courses-section"
+            style="background-image:url('/Content/img/bgimg/bg1.jpg'); height:auto; background-size: cover; background-position:center; background-attachment: fixed;">
+            <div class="container">
+                <h2 class="section-heading fw-bold">Our Courses</h2>
+                <div class="row mt-4 gy-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-course rounded-0">
+                            <img src="https://img.freepik.com/premium-photo/engineer-hardhat-studying-blueprints_148840-24389.jpg"
+                                alt="Mechanical">
+                            <div class="card-body-course">
+                                <div class="card-top">
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold "
+                                    style=" margin-top:-5px !important; color:darkred !important; font-size:19px;"><i
+                                        class="fas fa-drafting-compass card-icon"
+                                        style="color:darkred; font-size:17px;"></i> Civil Engineering</h5>
+                                <hr>
+                                <div class="read-more-btn" style="margin-top:10px;">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-course rounded-0">
+                            <img src="https://st.depositphotos.com/1034582/3689/i/450/depositphotos_36892243-stock-photo-gears.jpg"
+                                alt="Mechanical">
+                            <div class="card-body-course">
+                                <div class="card-top">
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold "
+                                    style=" margin-top:-5px !important; color:darkred !important; font-size:19px;"><i
+                                        class="fas fa-cogs card-icon" style="color:darkred; font-size:17px;"></i>
+                                    Mechanical Engineering</h5>
+                                <hr>
+                                <div class="read-more-btn" style="margin-top:10px;">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-course rounded-0">
+                            <img src="https://th.bing.com/th/id/R.4ebfac63dc1e26d9cfed923df88e755e?rik=jRRetMJPCfva9g&riu=http%3a%2f%2fwww.kuce.ac.in%2fimages%2fsampledata%2ffruitshop%2fit.jpg&ehk=DOIygtWbXcVy9fjK7iBO7THqzlQ9UedByCxGfi7RQQ0%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Mechanical">
+                            <div class="card-body-course">
+                                <div class="card-top">
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold "
+                                    style=" margin-top:-5px !important; color:darkred !important; font-size:19px;"><i
+                                        class="fas fa-laptop-code card-icon" style="color:darkred; font-size:17px;"></i>
+                                    Computer Science</h5>
+                                <hr>
+                                <div class="read-more-btn" style="margin-top:10px;">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card-course rounded-0">
+                            <img src="https://wallpaperbat.com/img/9730880-electrical-engineering-bootcamp-bundle.jpg"
+                                alt="Mechanical">
+                            <div class="card-body-course">
+                                <div class="card-top">
+                                </div>
+                                <h5 class="card-title mb-0 fw-bold "
+                                    style=" margin-top:-5px !important; color:darkred !important; font-size:19px;"><i
+                                        class="fas fa-bolt card-icon" style="color:darkred; font-size:17px;"></i>
+                                    Electrical Engineering</h5>
+                                <hr>
+                                <div class="read-more-btn" style="margin-top:10px;">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards with scrolling -->
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div class="container-fluid py-5"
+                    style="background-color:darkred; background-repeat:no-repeat; background-size:cover;">
+                    <div class="container mt-4">
+                        <div class="row g-4 align-items-center justify-content-center">
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card-custom">
+                                    <div class="card-header-custom bg-warning text-dark"
+                                        style="font-family:Poppins,sans-serif;">Circulars &amp; Notices</div>
+                                    <div class="card-body-custom">
+                                        <marquee direction="up" scrollamount="4" onmouseover="this.stop();"
+                                            onmouseout="this.start();">
+                                            <div class="notice-item mb-2">
+                                                <strong>Notice of admission for lateral entry students, 2025-26</strong>
+                                                <br>
+                                                <a href="/Content/upload/Document/File_20250822_201106.pdf"
+                                                    target="_blank" class="text-primary">
+                                                    📂 Download File
+                                                </a>
+                                                <hr>
+                                            </div>
+                                            <div class="notice-item mb-2">
+                                                <strong>Girls hostel information first year 2025-26 batch</strong>
+                                                <br>
+                                                <a href="/Content/upload/Document/File_20250816_032952.pdf"
+                                                    target="_blank" class="text-primary">
+                                                    📂 Download File
+                                                </a>
+                                                <hr>
+                                            </div>
+                                            <!-- Add more notices as needed -->
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card-custom">
+                                    <div class="card-header-custom bg-warning text-dark"
+                                        style="font-family:Poppins,sans-serif;">Events And News
+                                    </div>
+                                    <div class="card-body-custom">
+                                        <marquee direction="up" scrollamount="4" onmouseover="this.stop();"
+                                            onmouseout="this.start();" style="height:300px;">
+                                            <!-- Content here -->
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="card-custom">
+                                    <div class="card-header-custom bg-warning text-dark"
+                                        style="font-family:Poppins,sans-serif;">News &amp; e-Tenders</div>
+                                    <div class="card-body-custom">
+                                        <marquee direction="up" scrollamount="4" onmouseover="this.stop();"
+                                            onmouseout="this.start();">
+                                            <!-- Content here -->
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent Activities Carousel -->
+                <div
+                    style="background-image:url('https://recgonda.ac.in/Content/img/bgimg/bg1.jpg'); height:auto; background-size: cover; background-position: center; background-attachment: fixed;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container p-3">
+                                <div class="row mt-2 mb-4">
+                                    <div class="col text-center">
+                                        <h2 class="fw-bold text-white position-relative d-inline-block"
+                                            style="font-family: 'Josefin Sans', sans-serif;">
+                                            <span style="color:darkred">Recent Activities</span>
+                                            <div
+                                                style="height: 3px; width: 60%; background-color:darkred; margin: 10px auto 0;">
+                                            </div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="owl-carousel recent-activities-carousel owl-theme mt-5">
+                                    <!-- Carousel items will be populated via JavaScript -->
+                                    <div class="recent-activities-carousel owl-theme">
+                                        <div class="item">
+                                            <h4>1</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>2</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>3</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>4</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>5</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>6</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>7</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>8</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>9</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>10</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>11</h4>
+                                        </div>
+                                        <div class="item">
+                                            <h4>12</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 class="speak-text">RAJKIYA ENGINEERING COLLEGE</h5>
+                                    <p class="speak-text">
+                                        <i class="fa-solid fa-location-dot fa-bounce"></i> &nbsp;Address: Maa Pateshwari
+                                        Devi, Rajkiya Engineering College,
+                                        Utraula Road,<br>
+                                        Gonda 271 002 (U. P.)
+                                    </p>
+                                    <p class="speak-text"><strong><i class="fa-solid fa-envelope fa-bounce"></i>
+                                            &nbsp;Email:</strong> director@recgonda.ac.in</p>
+                                    <h5>Other Contact details</h5>
+                                    <p class="mb-0"><b>Coordinator-</b> +91 99903 85812</p>
+                                    <p class="mb-0 mt-0"><b>Dean Academic-</b> +91 88875 36334</p>
+                                    <p class="mb-3 mt-0"><b>Registrar-</b> +91 94101 46092</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h5 class="quc">QUICK LINKS</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;<a href="https://aktu.ac.in/" target="_blank">AKTU
+                                            </a></li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;<a href="https://www.aicte-india.org/" target="_blank">AICTE</a></li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;<a href="https://aktu.ac.in/circulars.html" target="_blank">Circular
+                                                AKTU</a></li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;<a href="https://nptel.ac.in/" target="_blank">NPTEL</a></li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;<a href="https://erp.aktu.ac.in/Login.aspx"
+                                                target="_blank">AKTU-ERP</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5>COLLEGE CELL</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="/home/AntiRaggingComplaint" target="_blank">Anti-ragging Cell</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="#" target="_blank">Placement Cell</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="/home/GrievancePortal" target="_blank">Grievance Redressal Cell</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="/home/IQAC" target="_blank">IQAC Cell</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="/home/Faculty_Directory" target="_blank">Our Faculty</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="">Our Department</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5>POLICIES</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="#">Disclaimer</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="#">Hyperlinking Policy</a>
+                                        </li>
+                                        <li class="speak-text"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            &nbsp;
+                                            <a href="#">Copyright Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom bg-warning text-dark">
+                            <p class="my-auto p-2 speak-text">© Copyright 2025 REC Gonda, Uttar Pradesh, India | Powered
+                                by
+                                <strong> Softpro India Computer Technologies (P) Ltd.</strong>
+                            </p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+        <script>
+            $('.recent-activities-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>

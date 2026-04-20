@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>🎵 Melody Play | Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="player-card">
+    <!-- album art -->
+    <div class="album-art">
+      <div class="art-circle">
+        <img id="albumImage" src="https://picsum.photos/id/100/300/300" alt="album art">
+      </div>
+    </div>
+
+    <!-- current song info -->
+    <div class="song-info">
+      <div class="song-title" id="currentSongTitle">Sunny Day</div>
+      <div class="song-artist" id="currentSongArtist">SoundHelix</div>
+    </div>
+
+    <!-- main control buttons -->
+    <div class="controls">
+      <button class="ctrl-btn" id="prevBtn"><i class="fas fa-backward-step"></i></button>
+      <button class="ctrl-btn play-pause" id="playPauseBtn"><i class="fas fa-play"></i></button>
+      <button class="ctrl-btn" id="nextBtn"><i class="fas fa-forward-step"></i></button>
+    </div>
+
+    <div id="errorMsg" class="error-msg" style="display: none;"></div>
+    <footer>🎧 simple music player | next / previous</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

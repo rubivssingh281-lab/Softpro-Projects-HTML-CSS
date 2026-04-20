@@ -1,0 +1,729 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f9fafc;
+  color: #2c3e50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  color: #1a2b4c;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(2, 100, 213);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0d3b6e;
+}
+
+/* ----- TOP HEADLINE BAR ----- */
+.headline {
+  background-color: rgb(2, 100, 213);
+  color: white;
+}
+
+.headlinetext {
+  font-size: 15px;
+}
+
+.txt a {
+  text-decoration: none;
+  color: white;
+}
+
+.txt a:hover {
+  text-decoration: underline;
+}
+
+/* ----- HEADER (Logo & Institute Name) ----- */
+.ff {
+  max-width: 100%;
+  height: auto;
+}
+
+.weww h1 {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+  color: #1a2b4c;
+  font-weight: 1000;
+}
+
+.weww h6 {
+  font-size: 13px;
+  margin-top: -8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bnt {
+  border: 2px solid black;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0 15px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.bnt i {
+  font-size: 20px;
+  color: rgb(2, 100, 213);
+}
+
+.bnt:hover {
+  background-color: rgb(2, 100, 213);
+  color: white;
+}
+
+.bnt:hover i {
+  color: white;
+}
+
+.cc span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.cc i {
+  margin-right: 8px;
+  color: rgb(2, 100, 213);
+}
+
+/* ----- NAVIGATION BAR ----- */
+.navbar {
+  background-color: rgb(2, 100, 213) !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important; ;
+  font-weight: 500;
+  padding: 12px 18px;
+  transition: background-color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white !important;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(2, 100, 213);
+  color: white;
+}
+
+/* ----- CAROUSEL / SLIDER ----- */
+.carousel-item img {
+  height: 650px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(2, 100, 213);
+  border-radius: 50%;
+  padding: 25px;
+}
+/* Make carousel container full width */
+.carousel.slide {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Ensure images cover the full width and maintain aspect ratio */
+.carousel-item img {
+  width: 100%;
+  height: 650px;          /* adjust as needed */
+  object-fit: cover;      /* ensures image fills without distortion */
+  object-position: center;
+}
+
+/* Remove any unwanted padding from parent containers */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow-x: hidden;     /* prevents horizontal scroll if any */
+}
+
+/* If the carousel is inside a .row, remove its gutters */
+.row .carousel {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ----- ANNOUNCEMENTS BAR ----- */
+.ass {
+  background-color: royalblue;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  width: 240px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.ass1 {
+  background-color: #f8f9fa;
+  border-left: 4px solid rgb(2, 100, 213);
+}
+
+.ass1 marquee p {
+  font-style: italic;
+  color: rgb(127, 125, 125);
+  font-size: 1rem;
+}
+
+/* ----- SECTION HEADINGS ----- */
+.nu1 {
+  border-left: 7px solid rgb(2, 100, 213);
+  padding-left: 10px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.nu11 {
+  border-left: 7px solid white;
+  padding-left: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+/* ----- CARDS (News, Courses, Achievements) ----- */
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: white;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-title {
+  background-color: rgb(2, 100, 213);
+  color: white !important;
+  padding: 10px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card-body p {
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ----- STUDY @ IIMM SECTION (Light background) ----- */
+.sty {
+  background-color: rgb(247, 239, 229);
+  padding: 2rem 0;
+}
+
+/* ----- ABOUT IIMM SECTION ----- */
+.row[style*="background-color: rgb(2, 100, 213)"] {
+  color: white;
+}
+
+.row[style*="background-color: rgb(2, 100, 213)"] p {
+  color: white;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+/* ----- ACHIEVEMENTS SECTION ----- */
+.op2 {
+  transition: opacity 0.5s;
+}
+
+.op2:hover {
+  opacity: 0.8;
+}
+
+/* ----- OUR TEAM SECTION ----- */
+.team-card {
+  height: 100%;
+  border-radius: 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  background: white;
+}
+
+.team-card h6 {
+  color: rgb(2, 100, 213);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team-card hr {
+  border-top: 2px solid rgb(2, 100, 213);
+  opacity: 1;
+  width: 50px;
+  margin: 1rem auto;
+}
+
+.team-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.team-card ul li {
+  padding: 5px 0;
+  border-bottom: 1px dashed #dee2e6;
+}
+
+.team-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* ----- MESSAGE FROM CHIEF ADVISOR ----- */
+.chief-advisor-img {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ----- EVENTS SECTION ----- */
+.event-card {
+  border: none;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.event-date {
+  background: linear-gradient(135deg, rgb(2, 100, 213) 0%, #2a6ec7 100%);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.event-date h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.event-date h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.event-details {
+  padding: 1.5rem;
+}
+
+/* ----- COUNTER STATS ----- */
+.counter-section {
+  background-color: rgb(2, 100, 213);
+  color: #f2f2f2;
+  padding: 50px 30px;
+}
+
+.counter-icon {
+  font-size: 40px;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.counter-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* ----- LIFE OF IIMM GALLERY ----- */
+.gallery-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+}
+
+/* ----- FOOTER ----- */
+.footer-section {
+  background: rgb(2, 100, 213);
+  color: white;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #fff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: white;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: white;
+}
+
+.footer-widget ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-widget ul li {
+  margin-bottom: 10px;
+}
+
+.footer-widget ul li a {
+  color: #ccd7e4;
+  transition: color 0.2s;
+}
+
+.footer-widget ul li a:hover {
+  color: white;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form button {
+  background: white;
+  color: rgb(2, 100, 213);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.subscribe-form button:hover {
+  background: #f0f0f0;
+}
+
+.copyright-area {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.copyright-text p {
+  color: #ccd7e4;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-menu ul li {
+  margin-left: 20px;
+}
+
+.footer-menu ul li a {
+  color: #ccd7e4;
+  font-size: 0.9rem;
+}
+
+.footer-menu ul li a:hover {
+  color: white;
+}
+
+/* ----- UTILITY CLASSES ----- */
+.text-justify {
+  text-align: justify;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.bg-primary-custom {
+  background-color: rgb(2, 100, 213);
+}
+
+.text-primary-custom {
+  color: rgb(2, 100, 213);
+}
+
+.btn-primary-custom {
+  background-color: rgb(2, 100, 213);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #0151b0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(2, 100, 213, 0.3);
+}
+
+/* ----- RESPONSIVE BREAKPOINTS (from media.css) ----- */
+@media (max-width: 576px) {
+  .cc {
+    display: none;
+  }
+  .w100 {
+    width: 100%;
+    text-align: center;
+  }
+  .w1001 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .ff {
+    margin-bottom: -30px;
+  }
+  .gg {
+    height: 300px !important;
+  }
+  .tt1 {
+    font-size: 15px !important;
+  }
+  .tt2 {
+    font-size: 30px !important;
+  }
+  .gh1 {
+    margin-top: -70px !important;
+  }
+  .ggh {
+    margin-left: 160px !important;
+  }
+  .w50 {
+    width: 50% !important;
+  }
+  .ss {
+    margin-left: -40px !important;
+  }
+  .ww {
+    border: 0px;
+  }
+  .bnt {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cc {
+    display: none;
+  }
+  .w100 {
+    text-align: center;
+  }
+  .w1001 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .ggh {
+    margin-left: 320px !important;
+  }
+  .w50 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .w100 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .weww {
+    margin-top: 20px !important;
+  }
+  .bnt {
+    font-size: 12px !important;
+    margin-bottom: 20px;
+  }
+  .t1 {
+    font-size: 20px !important;
+  }
+  .t2 {
+    margin-left: 20px;
+  }
+  .t21 {
+    margin-left: 40px;
+  }
+  .t211 {
+    margin-left: 0px;
+  }
+  .t3 {
+    font-size: 15px !important;
+    display: flex;
+  }
+  .i2 {
+    margin-left: -10px !important;
+  }
+  .t121 {
+    margin-left: 10px !important;
+  }
+  .t22a {
+    margin-left: -15px !important;
+  }
+  .maf {
+    margin-top: 20px !important;
+  }
+  .mt {
+    margin-top: 20px !important;
+  }
+}
+
+/* ----- ANIMATIONS (for Splide/AOS) ----- */
+.splide__slide {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+[data-aos] {
+  transition-timing-function: ease;
+}

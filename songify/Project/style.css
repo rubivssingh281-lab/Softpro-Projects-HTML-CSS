@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, 'Segoe UI', 'Poppins', 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/047/918/672/non_2x/music-abstract-with-headphones-horizontal-wallpaper-photo.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.player-card {
+  max-width: 550px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+  border-radius: 2.5rem;
+  box-shadow: #cfcfdf 0px 0px 20px 0px;
+  overflow: hidden;
+  padding: 1.8rem 1.5rem 2rem;
+  transition: all 0.2s ease;
+}
+
+.album-art {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.art-circle {
+  margin-top: 40px;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(145deg, #ffb347, #ff6b6b);
+}
+.art-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.song-info {
+  text-align: center;
+  margin: 0.8rem 0 1rem;
+}
+.song-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+.song-artist {
+  font-size: 1rem;
+  color: #cfcfdf;
+  margin-top: 0.25rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  margin: 1rem 0 1.2rem;
+}
+.ctrl-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.ctrl-btn:hover {
+  background: #ffaa66;
+  color: #1e1e2f;
+  transform: scale(1.05);
+}
+.play-pause {
+  background: #ff914d;
+  color: #1e1e2f;
+  width: 64px;
+  height: 64px;
+  font-size: 2rem;
+}
+.play-pause:hover {
+  background: #ffb347;
+}
+
+.error-msg {
+  background: #ff4d4d20;
+  border-left: 3px solid #ffaa66;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  margin-top: 8px;
+  border-radius: 40px;
+  color: #ffcf9a;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 1.2rem;
+  color: #aaaac0;
+}
+
+@media (max-width: 500px) {
+  .player-card { padding: 1.2rem; }
+  .ctrl-btn { width: 44px; height: 44px; font-size: 1.3rem; }
+  .play-pause { width: 56px; height: 56px; font-size: 1.7rem; }
+  .song-title { font-size: 1.4rem; }
+  .art-circle { width: 200px; height: 200px; }
+}
